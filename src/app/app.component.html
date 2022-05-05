@@ -1,0 +1,15 @@
+<p>See the button get enabled only when all the options are selected</p>
+
+<input type="checkbox" [(ngModel)]="agree" />I agree
+
+<div>
+  <!-- <input type="radio" [(ngModel)]="gender" name="gender" value="male">Male<br/>
+<input type="radio" [(ngModel)]="gender" name="gender" value="female">Female -->
+</div>
+<input
+  type="checkbox"
+  [disabled]="!agree"
+  text="on"
+  value="off"
+  (click)="btnClick()"
+/>
